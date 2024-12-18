@@ -58,8 +58,9 @@ Crie uma aplicação web em Vue.js que consuma a **Marvel API**. O objetivo é e
 
 ## Entrega
 
-1. Crie um pull request para a branch main do projeto.
-2. Inclua em um arquivo markdown `how-to-run.md`:
+1. Você tem 7 dias para fazer o teste. Entregue o que conseguiu concluir nesse período.
+2. Crie um pull request para a branch main do projeto.
+3. Inclua em um arquivo markdown `how-to-run.md`:
    - Instruções para configurar as chaves da API Marvel.
    - Como rodar o projeto localmente.
 
