@@ -42,7 +42,7 @@ Crie uma aplicação web em Vue.js que consuma a **Marvel API**. O objetivo é e
 - Utilize **Vue.js 3** com ou sem **Composition API**.
 - Use o **Vue Router** para navegação entre a lista e a página de detalhes.
 - Configure a autenticação nas requisições da API (veja a [documentação de autenticação da Marvel](https://developer.marvel.com/documentation/authorization)).
-- Estilize a aplicação com **CSS puro**, **Tailwind**, ou **Bootstrap** (escolha do candidato).
+- Estilize a aplicação com **CSS puro** ou **SCSS** (escolha do candidato).
 - Adicione feedback visual ao carregar os dados (spinner ou mensagem "Carregando...").
 
 ---
