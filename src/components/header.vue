@@ -65,13 +65,13 @@ import { useRoute } from 'vue-router';
     }
     .header__links ul{
         display: flex;
-        gap: 14px;
+        gap: 24px;
         list-style: none;
     }
     .header__links li a{
         text-decoration: none;
         font-size: 20px;
-        opacity: 0.8;
+        opacity: 0.7;
     }
     .header__links li a.active{
         opacity: 1;
@@ -96,6 +96,7 @@ import { useRoute } from 'vue-router';
             padding: 10px 30px;
             text-align: center;
             width: 100%;
+            gap: 10px;
         }
         .header__links.is-open {
           display: flex;
