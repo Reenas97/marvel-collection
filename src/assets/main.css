@@ -1,0 +1,178 @@
+@import './base.css';
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main{
+  flex: 1;
+  align-items: center;
+  background: url('../assets/images/marvel-bg-op.jpg') repeat;
+}
+
+.margint-default{
+  margin-top: 70px;
+}
+
+.marginb-default{
+  margin-bottom: 70px;
+}
+
+.paddingt-default{
+  padding-top: 70px;
+}
+
+.paddingb-default{
+  padding-bottom: 70px;
+}
+
+.title{
+  font-family: "Bangers", serif;
+  text-shadow: 2px 2px #000000;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.title--white{
+  color: #fff;
+}
+
+.title--red{
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+
+ul{
+  list-style: square;
+}
+
+.bg--dark{
+  background: #212529;
+}
+
+.container{
+  padding: 0 12%;
+}
+
+.text--white{
+  color: #fff;
+}
+
+.w--100{
+  width: 100%;
+}
+
+.text--center{
+  text-align: center;
+}
+
+.itemsList{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.itemsList__container{
+  margin-bottom: 20px;
+}
+
+.btn{
+  border-radius: 0;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  transition: all ease 0.4s;
+  cursor: pointer
+
+}
+
+.btn--red{
+  background: #dc3545;
+}
+
+.btn--red:hover{
+  background: #92232e;
+}
+
+.btn--dark{
+  background: #212529;
+}
+
+.btn--dark:hover{
+  background: #000;
+}
+
+.itemInfos{
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 20px;
+}
+
+.itemInfos__card{
+  padding: 20px;
+}
+
+.itemInfos__card img{
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemInfos__title{
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.itemInfos__title--secondary{
+  text-align: start;
+  font-size: 28px;
+  margin: 25px 0 10px 0;
+}
+
+.itemInfos__list{
+  display: flex;
+}
+
+.itemInfos__list li{
+  margin: 8px 0; 
+}
+
+@media(max-width: 1580px){
+  .container{
+    padding: 0 10%;
+  }
+}
+
+@media(max-width: 1175px){
+  .title{
+    font-size: 32px;
+  }
+  .itemsList{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 728px){
+  .container{
+    padding: 0 8%;
+  }
+  .itemsList{
+    grid-template-columns: 1fr;
+  }
+  .itemInfos{
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .itemInfos__list{
+    flex-direction: column;
+  }
+  .itemInfos__title{
+    font-size: 30px;
+  }
+  .itemInfos__title--secondary{
+    font-size: 26px;
+  }
+}
