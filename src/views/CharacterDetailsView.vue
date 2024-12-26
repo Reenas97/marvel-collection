@@ -52,7 +52,9 @@
     const fetchComicDetails = (async () => {
         const comicList = toRaw(comics.value)
         for (const comic of comicList) {
-            const url = `${comic.resourceURI}?ts=${ts}&apikey=${publicKey}&hash=${hash}`
+            const secureUrl = comic.resourceURI.replace("http://", "https://")
+            console.log(secureUrl)
+            const url = `${secureUrl}?ts=${ts}&apikey=${publicKey}&hash=${hash}`
             await fetch(url)
                 .then(res => res.json())
                 .then(res => {
